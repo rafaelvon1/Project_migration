@@ -63,7 +63,7 @@ if __name__ == "__main__":
             with engine_ptg.connect() as conn:
                 data_postgre = conn_ptg.Query_all(conn, table_name_origem, schema_origem)
                 df = pd.DataFrame(data_postgre)
-            df.to_csv(f"dados_csv/{table_name_destino}.csv", index=False)
+            df.to_csv(f"dados_csv/{table_name_destino}_postgre.csv", index=False)
             print(f"Dados da tabela {table_name_destino} exportados")
             logger.info(f"Dados da tabela {table_name_destino} exportados ")
         except Exception as e:
@@ -84,7 +84,7 @@ if __name__ == "__main__":
             with engine_sql.connect() as conn:
                 data_sql = conn_sql.Query_all(conn, table_name_destino, schema_destino)
                 df_sql = pd.DataFrame(data_sql)
-            df_sql.to_csv(f"dados_csv/{table_name_destino}_sql.csv", index=False)
+            df_sql.to_csv(f"dados_csv/{table_name_destino}_sqlserver.csv", index=False)
             print(f"Dados da tabela {table_name_destino} exportados do SQL Server")
             logger.info(f"Dados da tabela {table_name_destino} exportados do SQL Server ")
         except Exception as e:
