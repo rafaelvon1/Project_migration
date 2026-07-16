@@ -1,0 +1,26 @@
+{
+    "connection_sqlserver": {
+        "driver": "ODBC Driver 18 for SQL Server",
+        "server": "localhost",
+        "database": "master",
+        "username": "sa",
+        "password": "SuaSenhaSuperForte123!"
+    },
+    "connection_postgre": {
+        "host": "localhost",
+        "database": "postgres",
+        "user": "postgres",
+        "password": "example",
+        "port": "5432"
+    },
+    "source_tables": {
+        "source": {
+            "schema_origem": "public",
+            "schema_destino": "dbo",
+            "table_origem": "usuarios_origem",
+            "table_destino": "usuarios",
+            "column_MD5": "hash_id",
+            "column_pk": "id"
+        }
+    }
+}
