@@ -1,0 +1,10 @@
+2026-07-15 23:19:31,634 | INFO | etl | iniciando o processo de ETL
+2026-07-15 23:19:31,666 | INFO | etl | dados Json Carregados
+2026-07-15 23:19:31,706 | INFO | etl | Dados da tabela usuarios exportados 
+2026-07-15 23:19:31,707 | INFO | etl | Coluna MD5 gerada para a tabela usuarios
+2026-07-15 23:19:31,744 | INFO | etl | Dados da tabela usuarios exportados do SQL Server 
+2026-07-15 23:19:31,759 | INFO | etl | upsert da tabela usuarios Realizado: 
+
+Dados Deletados:1
+Dados Atualizados: 1
+Dados Inseridos: 2
